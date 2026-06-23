@@ -2322,3 +2322,40 @@ body.rtl .footer-links a:hover {
   .card-tech-2 { left: 0; }
   .card-tech-3 { right: 0; }
 }
+
+/* ============================================
+   Mobile Performance: Disable Heavy Animations
+   ============================================ */
+@media (max-width: 767.98px) {
+  .particles .particle,
+  .particles .particle-up {
+    animation: none !important;
+    display: none !important;
+  }
+
+  .shape {
+    animation: none !important;
+  }
+
+  .floating-card {
+    animation: none !important;
+  }
+
+  .hero-image-wrapper {
+    animation: none !important;
+  }
+
+  .scroll-indicator {
+    animation: none !important;
+  }
+
+  .skill-progress .progress-bar {
+    transition: width 0.5s ease-out !important;
+  }
+
+  .service-card:hover,
+  .portfolio-card:hover,
+  .testimonial-card:hover {
+    transform: none !important;
+  }
+}
