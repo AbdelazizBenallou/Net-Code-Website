@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Net Code - Software Development Agency in Tiaret, Algeria. We build websites, mobile apps, full-stack systems, and UML-based software solutions.">
+  <meta name="keywords"
+    content="Software Development, Web Development, Mobile Applications, Tiaret, Algeria, Net Code, Full-Stack, UML">
+  <meta name="author" content="Net Code">
+  <meta property="og:title" content="Net Code - Software Development Agency">
+  <meta property="og:description" content="Building Powerful Digital Solutions for Modern Businesses">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://netcode.dz">
+  <meta name="theme-color" content="#0B6F3A">
+
+  <link rel="icon" href="images/icon.jpg">
+  <link href="libs/google-fonts/fonts.css" rel="stylesheet">
+  <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="libs/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Net Code | Software Development Agency - Tiaret, Algeria</title>
+</head>
+
+<body>
+
+  <!-- Skip to content -->
+  <a href="#hero" class="skip-link visually-hidden-focusable">Skip to content</a>
+
+  <!-- Mobile toggle (visible only on small screens) -->
+  <button class="sidebar-mobile-toggle" id="sidebarMobileToggle" aria-label="Toggle navigation">
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </button>
+
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+      <a class="sidebar-brand" href="#hero">
+        <img src="images/icons/icom symbol (color).png" alt="Net Code" class="sidebar-logo sidebar-logo-small"
+          id="sidebarSmallLogo">
+        <img src="images/icons/logo-dark.png" alt="Net Code" class="sidebar-logo sidebar-logo-big" id="sidebarBigLogo">
+      </a>
+
+      <ul class="sidebar-nav">
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="#hero">
+            <i class="bi bi-house-door"></i>
+            <span class="sidebar-label" data-i18n="nav.home">Home</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="#about">
+            <i class="bi bi-info-circle"></i>
+            <span class="sidebar-label" data-i18n="nav.about">About</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="#services">
+            <i class="bi bi-grid"></i>
+            <span class="sidebar-label" data-i18n="nav.services">Services</span>
+          </a>
+        </li>
+
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="#skills">
+            <i class="bi bi-bar-chart"></i>
+            <span class="sidebar-label" data-i18n="nav.skills">Skills</span>
+          </a>
+        </li>
+
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="#portfolio">
+            <i class="bi bi-folder"></i>
+            <span class="sidebar-label" data-i18n="nav.portfolio">Portfolio</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="#architecture">
+            <i class="bi bi-layers"></i>
+            <span class="sidebar-label" data-i18n="nav.architecture">Architecture</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="#testimonials">
+            <i class="bi bi-chat-quote"></i>
+            <span class="sidebar-label" data-i18n="nav.testimonials">Testimonials</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="#contact">
+            <i class="bi bi-envelope"></i>
+            <span class="sidebar-label" data-i18n="nav.contact">Contact</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="sidebar-footer">
+        <button class="lang-switch" id="langSwitch" aria-label="Switch language">
+          <span class="lang-en">AR</span>
+          <span class="lang-ar">EN</span>
+        </button>
+        <span class="sidebar-label">Lang</span>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="bi bi-sun-fill"></i>
+          <i class="bi bi-moon-fill"></i>
+        </button>
+        <span class="sidebar-label">Theme</span>
+      </div>
+    </div>
+  </nav>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="particles" id="particles"></div>
+      <div class="geometric-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+      </div>
+    </div>
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-6 hero-content" data-animation="fade-left">
+          <span class="hero-badge" data-i18n="hero.badge">Software Development Agency</span>
+          <h1 class="hero-title" data-i18n="hero.title">Building Powerful Digital Solutions for Modern Businesses</h1>
+          <p class="hero-desc" data-i18n="hero.desc">Net Code specializes in creating websites, mobile applications,
+            full-stack systems, and UML-based software solutions.</p>
+          <div class="typing-wrapper">
+            <span class="typing-label" data-i18n="hero.weDo">We do</span>
+            <span class="typing-text" id="typingText"></span>
+          </div>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary btn-lg hero-btn" data-i18n="hero.startBtn">Start Your Project</a>
+            <a href="#services" class="btn btn-outline-light btn-lg hero-btn-outline"
+              data-i18n="hero.servicesBtn">Explore Services</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-count="50">0</span>
+              <span class="stat-plus">+</span>
+              <span class="stat-label" data-i18n="hero.statProjects">Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="20">0</span>
+              <span class="stat-plus">+</span>
+              <span class="stat-label" data-i18n="hero.statClients">Clients</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="5">0</span>
+              <span class="stat-plus">+</span>
+              <span class="stat-label" data-i18n="hero.statYears">Years Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="24">0</span>
+              <span class="stat-plus">/7</span>
+              <span class="stat-label" data-i18n="hero.statSupport">Support</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-visual" data-animation="fade-right">
+          <div class="hero-image-wrapper">
+            <img src="images/hero.jpeg" alt="Net Code Team" class="hero-image img-fluid" loading="eager">
+            <div class="floating-card card-tech-1">
+              <i class="bi bi-code-slash"></i>
+              <span>React</span>
+            </div>
+            <div class="floating-card card-tech-2">
+              <i class="bi bi-phone"></i>
+              <span>Flutter</span>
+            </div>
+            <div class="floating-card card-tech-3">
+              <i class="bi bi-database"></i>
+              <span>Node.js</span>
+            </div>
+            <div class="floating-card card-tech-4">
+              <i class="bi bi-cloud"></i>
+              <span>AWS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span data-i18n="hero.scroll">Scroll Down</span>
+      <i class="bi bi-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0" data-animation="fade-left">
+          <div class="about-image-wrapper">
+            <img src="images/icon.jpg" alt="Net Code Agency" class="about-image img-fluid">
+            <div class="about-experience-badge">
+              <span class="exp-number">5+</span>
+              <span class="exp-text" data-i18n="about.yearsLabel">Years of Excellence</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-animation="fade-right">
+          <span class="section-badge" data-i18n="about.badge">Who We Are</span>
+          <h2 class="section-title" data-i18n="about.title">Crafting Digital Excellence Since Day One</h2>
+          <p class="about-text" data-i18n="about.para1">Net Code is a Tiaret-based software development agency
+            passionate about creating impactful digital solutions. We combine technical expertise with creative thinking
+            to deliver products that drive real business results.</p>
+          <p class="about-text" data-i18n="about.para2">From startups to established enterprises, we partner with
+            clients to bring their visions to life through clean code, thoughtful design, and reliable architecture.</p>
+          <div class="about-counters">
+            <div class="counter-card">
+              <span class="counter-number" data-count="50">0</span>
+              <span class="counter-plus">+</span>
+              <span class="counter-label" data-i18n="about.counterProjects">Projects Completed</span>
+            </div>
+            <div class="counter-card">
+              <span class="counter-number" data-count="20">0</span>
+              <span class="counter-plus">+</span>
+              <span class="counter-label" data-i18n="about.counterClients">Happy Clients</span>
+            </div>
+            <div class="counter-card">
+              <span class="counter-number" data-count="5">0</span>
+              <span class="counter-plus">+</span>
+              <span class="counter-label" data-i18n="about.counterYears">Years Experience</span>
+            </div>
+            <div class="counter-card">
+              <span class="counter-number" data-count="30">0</span>
+              <span class="counter-plus">+</span>
+              <span class="counter-label" data-i18n="about.counterTechs">Technologies Used</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Section -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="text-center mb-5" data-animation="fade-up">
+        <span class="section-badge" data-i18n="services.badge">What We Do</span>
+        <h2 class="section-title" data-i18n="services.title">Our Service</h2>
+      </div>
+      <div class="row g-4" data-animation="fade-up">
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card">
+            <div class="service-img">
+              <img src="images/service-1.jpg" alt="One-Page Business Websites" class="img-fluid" loading="lazy">
+            </div>
+            <div class="service-icon">
+              <i class="bi bi-laptop"></i>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title" data-i18n="services.card1.title">One-Page Business Websites</h3>
+              <p class="service-desc" data-i18n="services.card1.desc">Modern, responsive single-page websites that
+                capture your brand essence and convert visitors into customers.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card">
+            <div class="service-img">
+              <img src="images/service-2.jpg" alt="Corporate Websites" loading="lazy" class="img-fluid">
+            </div>
+            <div class="service-icon">
+              <i class="bi bi-building"></i>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title" data-i18n="services.card2.title">Corporate Websites</h3>
+              <p class="service-desc" data-i18n="services.card2.desc">Multi-page corporate platforms with CMS
+                integration, built to scale with your growing business needs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card">
+            <div class="service-img">
+              <img src="images/service-3.jpg" alt="Full-Stack Web Applications" loading="lazy" class="img-fluid">
+            </div>
+            <div class="service-icon">
+              <i class="bi bi-stack"></i>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title" data-i18n="services.card3.title">Full-Stack Web Applications</h3>
+              <p class="service-desc" data-i18n="services.card3.desc">End-to-end web applications with robust backends,
+                modern frontends, and scalable database architecture.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card">
+            <div class="service-img">
+              <img src="images/service-4.jpg" alt="Mobile Applications" loading="lazy" class="img-fluid">
+            </div>
+            <div class="service-icon">
+              <i class="bi bi-phone"></i>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title" data-i18n="services.card4.title">Mobile Applications</h3>
+              <p class="service-desc" data-i18n="services.card4.desc">Native and cross-platform mobile apps for iOS and
+                Android using Flutter, React Native, and Swift.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card">
+            <div class="service-img">
+              <img src="images/service-5.jpg" alt="UML Analysis & System Design" loading="lazy" class="img-fluid">
+            </div>
+            <div class="service-icon">
+              <i class="bi bi-diagram-3"></i>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title" data-i18n="services.card5.title">UML Analysis & System Design</h3>
+              <p class="service-desc" data-i18n="services.card5.desc">Professional UML modeling, system architecture
+                design, and software requirement analysis for complex projects.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card">
+            <div class="service-img">
+              <img src="images/service-6.jpg" alt="Maintenance & Technical Support" loading="lazy" class="img-fluid">
+            </div>
+            <div class="service-icon">
+              <i class="bi bi-gear"></i>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title" data-i18n="services.card6.title">Maintenance & Technical Support</h3>
+              <p class="service-desc" data-i18n="services.card6.desc">Ongoing maintenance, security updates, performance
+                optimization, and 24/7 technical support services.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills section" id="skills" data-animation="scale-in">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge" data-i18n="skills.badge">Our Expertise</span>
+        <h2 class="section-title" data-i18n="skills.title">Our Skills & Expertise</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="skill-card">
+            <div class="skill-card-icon">
+              <i class="bi bi-code-slash"></i>
+            </div>
+            <h4 class="skill-card-title" data-i18n="skills.web">Web Development</h4>
+            <div class="progress skill-progress">
+              <div class="progress-bar" data-width="95"></div>
+            </div>
+            <span class="skill-card-percent">95%</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="skill-card">
+            <div class="skill-card-icon">
+              <i class="bi bi-phone"></i>
+            </div>
+            <h4 class="skill-card-title" data-i18n="skills.mobile">Mobile Development</h4>
+            <div class="progress skill-progress">
+              <div class="progress-bar" data-width="90"></div>
+            </div>
+            <span class="skill-card-percent">90%</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="skill-card">
+            <div class="skill-card-icon">
+              <i class="bi bi-stack"></i>
+            </div>
+            <h4 class="skill-card-title" data-i18n="skills.fullstack">Full Stack Development</h4>
+            <div class="progress skill-progress">
+              <div class="progress-bar" data-width="98"></div>
+            </div>
+            <span class="skill-card-percent">98%</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="skill-card">
+            <div class="skill-card-icon">
+              <i class="bi bi-palette"></i>
+            </div>
+            <h4 class="skill-card-title" data-i18n="skills.uiux">UI/UX Design</h4>
+            <div class="progress skill-progress">
+              <div class="progress-bar" data-width="85"></div>
+            </div>
+            <span class="skill-card-percent">85%</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="skill-card">
+            <div class="skill-card-icon">
+              <i class="bi bi-diagram-2"></i>
+            </div>
+            <h4 class="skill-card-title" data-i18n="skills.api">API Development</h4>
+            <div class="progress skill-progress">
+              <div class="progress-bar" data-width="92"></div>
+            </div>
+            <span class="skill-card-percent">92%</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="skill-card">
+            <div class="skill-card-icon">
+              <i class="bi bi-diagram-3"></i>
+            </div>
+            <h4 class="skill-card-title" data-i18n="skills.uml">UML Analysis & Design</h4>
+            <div class="progress skill-progress">
+              <div class="progress-bar" data-width="94"></div>
+            </div>
+            <span class="skill-card-percent">94%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge" data-i18n="portfolio.badge">Our Work</span>
+        <h2 class="section-title" data-i18n="portfolio.title">Featured Projects</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6" data-animation="fade-up" data-delay="0">
+          <div class="portfolio-card" tabindex="0">
+            <div class="portfolio-img">
+              <img src="images/project-1.jpg" alt="E-Commerce Platform" loading="lazy" class="img-fluid">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h4 class="portfolio-project-title" data-i18n="portfolio.project1.title">E-Commerce Platform</h4>
+                  <span class="portfolio-category" data-i18n="portfolio.project1.cat">Web Application</span>
+                  <a href="#contact" class="btn btn-sm btn-primary mt-3" data-i18n="portfolio.details">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-animation="fade-up" data-delay="0.1">
+          <div class="portfolio-card" tabindex="0">
+            <div class="portfolio-img">
+              <img src="images/project-2.jpg" alt="Health Tracker App" loading="lazy" class="img-fluid">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h4 class="portfolio-project-title" data-i18n="portfolio.project2.title">Health Tracker App</h4>
+                  <span class="portfolio-category" data-i18n="portfolio.project2.cat">Mobile Application</span>
+                  <a href="#contact" class="btn btn-sm btn-primary mt-3" data-i18n="portfolio.details">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-animation="fade-up" data-delay="0.2">
+          <div class="portfolio-card" tabindex="0">
+            <div class="portfolio-img">
+              <img src="images/project-3.jpg" alt="SaaS Dashboard" loading="lazy" class="img-fluid">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h4 class="portfolio-project-title" data-i18n="portfolio.project3.title">SaaS Dashboard</h4>
+                  <span class="portfolio-category" data-i18n="portfolio.project3.cat">Full-Stack Application</span>
+                  <a href="#contact" class="btn btn-sm btn-primary mt-3" data-i18n="portfolio.details">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-animation="fade-up" data-delay="0.3">
+          <div class="portfolio-card" tabindex="0">
+            <div class="portfolio-img">
+              <img src="images/project-4.jpg" alt="Logistics Platform" loading="lazy" class="img-fluid">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h4 class="portfolio-project-title" data-i18n="portfolio.project4.title">Logistics Platform</h4>
+                  <span class="portfolio-category" data-i18n="portfolio.project4.cat">Web Application</span>
+                  <a href="#contact" class="btn btn-sm btn-primary mt-3" data-i18n="portfolio.details">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-animation="fade-up" data-delay="0.4">
+          <div class="portfolio-card" tabindex="0">
+            <div class="portfolio-img">
+              <img src="images/project-5.jpg" alt="Food Delivery App" loading="lazy" class="img-fluid">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h4 class="portfolio-project-title" data-i18n="portfolio.project5.title">Food Delivery App</h4>
+                  <span class="portfolio-category" data-i18n="portfolio.project5.cat">Mobile Application</span>
+                  <a href="#contact" class="btn btn-sm btn-primary mt-3" data-i18n="portfolio.details">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-animation="fade-up" data-delay="0.5">
+          <div class="portfolio-card" tabindex="0">
+            <div class="portfolio-img">
+              <img src="images/project-6.jpg" alt="API Gateway System" loading="lazy" class="img-fluid">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h4 class="portfolio-project-title" data-i18n="portfolio.project6.title">API Gateway System</h4>
+                  <span class="portfolio-category" data-i18n="portfolio.project6.cat">Backend System</span>
+                  <a href="#contact" class="btn btn-sm btn-primary mt-3" data-i18n="portfolio.details">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture & Tech Section -->
+  <section class="architecture section" id="architecture" data-animation="flip-up">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge" data-i18n="arch.badge">Our Architecture</span>
+        <h2 class="section-title" data-i18n="arch.title">How We Build Projects</h2>
+      </div>
+      <div class="row g-4 mb-5">
+        <div class="col-lg-3 col-md-6">
+          <div class="arch-card">
+            <div class="arch-icon">
+              <i class="bi bi-layers"></i>
+            </div>
+            <h4 class="arch-title" data-i18n="arch.monolithic">Monolithic</h4>
+            <p class="arch-desc" data-i18n="arch.monolithicDesc">Traditional all-in-one architecture for simpler
+              projects with unified codebases.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="arch-card">
+            <div class="arch-icon">
+              <i class="bi bi-grid-3x3-gap"></i>
+            </div>
+            <h4 class="arch-title" data-i18n="arch.microservices">Microservices</h4>
+            <p class="arch-desc" data-i18n="arch.microservicesDesc">Decoupled services for scalable, maintainable
+              enterprise-grade applications.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="arch-card">
+            <div class="arch-icon">
+              <i class="bi bi-cloud-arrow-up"></i>
+            </div>
+            <h4 class="arch-title" data-i18n="arch.serverless">Serverless</h4>
+            <p class="arch-desc" data-i18n="arch.serverlessDesc">Event-driven cloud architecture with auto-scaling and
+              pay-per-use pricing.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="arch-card">
+            <div class="arch-icon">
+              <i class="bi bi-hdd-stack"></i>
+            </div>
+            <h4 class="arch-title" data-i18n="arch.eventDriven">Event-Driven</h4>
+            <p class="arch-desc" data-i18n="arch.eventDrivenDesc">Async communication between components for real-time
+              reactive systems.</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mb-4">
+        <h3 class="tech-stack-label" data-i18n="arch.frameworksLabel">Frameworks & Technologies We Use</h3>
+      </div>
+      <div class="row g-3 justify-content-center">
+        <div class="col-auto">
+          <span class="tech-badge"><i class="bi bi-diamond-fill"></i> React</span>
+        </div>
+        <div class="col-auto">
+          <span class="tech-badge"><i class="bi bi-diamond-fill"></i> Angular</span>
+        </div>
+        <div class="col-auto">
+          <span class="tech-badge"><i class="bi bi-diamond-fill"></i> Node.js</span>
+        </div>
+        <div class="col-auto">
+          <span class="tech-badge"><i class="bi bi-diamond-fill"></i> Django</span>
+        </div>
+        <div class="col-auto">
+          <span class="tech-badge"><i class="bi bi-diamond-fill"></i> Laravel</span>
+        </div>
+        <div class="col-auto">
+          <span class="tech-badge"><i class="bi bi-diamond-fill"></i> Flutter</span>
+        </div>
+        <div class="col-auto">
+          <span class="tech-badge"><i class="bi bi-diamond-fill"></i> React Native</span>
+        </div>
+        <div class="col-auto">
+          <span class="tech-badge"><i class="bi bi-diamond-fill"></i> PostgreSQL</span>
+        </div>
+        <div class="col-auto">
+          <span class="tech-badge"><i class="bi bi-diamond-fill"></i> MongoDB</span>
+        </div>
+        <div class="col-auto">
+          <span class="tech-badge"><i class="bi bi-diamond-fill"></i> Docker</span>
+        </div>
+        <div class="col-auto">
+          <span class="tech-badge"><i class="bi bi-diamond-fill"></i> AWS</span>
+        </div>
+        <div class="col-auto">
+          <span class="tech-badge"><i class="bi bi-diamond-fill"></i> Firebase</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials section" id="testimonials" data-animation="blur-in">
+    <div class="container">
+      <div class="text-center mb-5" data-animation="fade-up">
+        <span class="section-badge" data-i18n="testimonials.badge">Testimonials</span>
+        <h2 class="section-title" data-i18n="testimonials.title">What Our Clients Say</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-quote" data-i18n="testimonials.quote1">"Net Code transformed our online presence
+              completely. The team was professional, responsive, and delivered beyond our expectations. Highly
+              recommended!"</p>
+            <div class="testimonial-author">
+              <img src="images/avatar-1.svg" alt="Ahmed Benali" loading="lazy" class="testimonial-avatar">
+              <div>
+                <h5 class="testimonial-name">Ahmed Benali</h5>
+                <span class="testimonial-project" data-i18n="testimonials.project1">E-Commerce Platform</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-quote" data-i18n="testimonials.quote2">"Working with Net Code on our mobile app was a
+              great experience. They understood our vision and delivered a sleek, high-performance application on time."
+            </p>
+            <div class="testimonial-author">
+              <img src="images/avatar-2.svg" alt="Sarah Mansouri" loading="lazy" class="testimonial-avatar">
+              <div>
+                <h5 class="testimonial-name">Sarah Mansouri</h5>
+                <span class="testimonial-project" data-i18n="testimonials.project2">Health Tracker App</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-quote" data-i18n="testimonials.quote3">"The UML analysis and system design provided by
+              Net Code was thorough and professional. They turned our complex requirements into a clear, actionable
+              plan."</p>
+            <div class="testimonial-author">
+              <img src="images/avatar-3.svg" alt="Karim Hadj" loading="lazy" class="testimonial-avatar">
+              <div>
+                <h5 class="testimonial-name">Karim Hadj</h5>
+                <span class="testimonial-project" data-i18n="testimonials.project3">Logistics Platform</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact section" id="contact" data-animation="slide-up">
+    <div class="container">
+      <div class="text-center mb-5" data-animation="fade-up">
+        <span class="section-badge" data-i18n="contact.badge">Get In Touch</span>
+        <h2 class="section-title" data-i18n="contact.title">Let's Build Something Great Together</h2>
+      </div>
+      <div class="row g-5">
+        <div class="col-lg-5" data-animation="fade-left">
+          <div class="contact-info">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div>
+                <h5 data-i18n="contact.address">Address</h5>
+                <p data-i18n="contact.addressVal">Tiaret, Algeria</p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <div>
+                <h5 data-i18n="contact.phone">Phone</h5>
+                <p>+213 558 34 06 69</p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div>
+                <h5 data-i18n="contact.email">Email</h5>
+                <p>Benallouaziz1414@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="bi bi-clock"></i>
+              </div>
+              <div>
+                <h5 data-i18n="contact.hours">Working Hours</h5>
+                <p data-i18n="contact.hoursVal">Sun - Thu, 8:00 AM - 5:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7" data-animation="fade-right">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label visually-hidden" data-i18n="contact.form.name">Your Name</label>
+                <input type="text" class="form-control contact-input" id="name" placeholder="Your Name" required
+                  data-i18n-placeholder="contact.form.name" autocomplete="name">
+                <div class="invalid-feedback" data-i18n="contact.form.nameError">Please enter your name</div>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label visually-hidden" data-i18n="contact.form.email">Your Email</label>
+                <input type="email" class="form-control contact-input" id="email" placeholder="Your Email" required
+                  data-i18n-placeholder="contact.form.email" autocomplete="email">
+                <div class="invalid-feedback" data-i18n="contact.form.emailError">Please enter a valid email</div>
+              </div>
+              <div class="col-12">
+                <label for="subject" class="form-label visually-hidden" data-i18n="contact.form.subject">Subject</label>
+                <input type="text" class="form-control contact-input" id="subject" placeholder="Subject" required
+                  data-i18n-placeholder="contact.form.subject" autocomplete="off">
+                <div class="invalid-feedback" data-i18n="contact.form.subjectError">Please enter a subject</div>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label visually-hidden" data-i18n="contact.form.message">Your
+                  Message</label>
+                <textarea class="form-control contact-input" id="message" placeholder="Your Message"
+                  style="height:150px" required data-i18n-placeholder="contact.form.message"
+                  autocomplete="off"></textarea>
+                <div class="invalid-feedback" data-i18n="contact.form.messageError">Please enter your message</div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary btn-lg submit-btn" id="submitBtn">
+                  <span data-i18n="contact.form.send">Send Message</span>
+                  <i class="bi bi-send ms-2"></i>
+                </button>
+                <div class="form-success d-none mt-3" id="formSuccess">
+                  <div class="alert alert-success d-flex align-items-center" role="alert">
+                    <i class="bi bi-check-circle-fill me-2"></i>
+                    <span data-i18n="contact.form.success">Your message has been sent successfully!</span>
+                  </div>
+                </div>
+                <div class="form-error d-none mt-3" id="formError">
+                  <div class="alert alert-danger d-flex align-items-center" role="alert">
+                    <i class="bi bi-exclamation-circle-fill me-2"></i>
+                    <span data-i18n="contact.form.error">Something went wrong. Please try again later.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#hero">
+              <img src="images/icons/logo-white.png" alt="Net Code" class="brand-icon" id="footerLogo">
+            </a>
+            <p class="footer-desc" data-i18n="footer.desc">A Tiaret-based software development agency building powerful
+              digital solutions for modern businesses.</p>
+            <div class="footer-social">
+              <a href="https://www.facebook.com/share/1DKaE7gWW7" class="social-link" aria-label="Facebook"
+                target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/netcode_dz?igsh=MXVrOHdhb3VsanVsOQ==" class="social-link"
+                aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+              <a href="https://linkedin.com/company/netcode" class="social-link" aria-label="LinkedIn" target="_blank"
+                rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+              <a href="https://github.com/AbdelazizBenallou" class="social-link" aria-label="GitHub" target="_blank"
+                rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h5 class="footer-title" data-i18n="footer.quickLinks">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="#services" data-i18n="nav.services">Services</a></li>
+            <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h5 class="footer-title" data-i18n="footer.services">Services</h5>
+          <ul class="footer-links">
+            <li><a href="#services" data-i18n="services.card1.title">One-Page Business Websites</a></li>
+            <li><a href="#services" data-i18n="services.card3.title">Full-Stack Applications</a></li>
+            <li><a href="#services" data-i18n="services.card4.title">Mobile Applications</a></li>
+            <li><a href="#services" data-i18n="services.card5.title">UML Analysis & Design</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright" data-i18n="footer.copyright"> 2026 Net Code. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="libs/emailjs/email.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
